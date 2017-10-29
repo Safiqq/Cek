@@ -17,13 +17,11 @@ class LineConnect extends LineAPI {
       this._qrCodeLogin().then(async (res) => {
         this.authToken = res.authToken;
         this.certificate = res.certificate;
-        console.info(`[*] Token: ${this.authToken}`);
-        console.info(`[*] Certificate: ${res.certificate}\n`);
         let { mid, displayName } = await this._client.getProfile();
-        console.info(`[*] mid: ${mid}\n`);
         console.info(`[*] Name: ${displayName}\n`);
-        console.info(`NOTE: Dont forget , put your mid and admin on variable 'myBot' in main.js \n`);
-        console.info(`Regrads Alfathdirk and thx for TCR Team \n`);
+        console.info(`[*] mid: ${mid}\n`);
+        console.info(`[*] Token: ${this.authToken}`);
+        console.info(`[*] Certificate: ${this.certificate}\n`);
         console.info(`=======BOT RUNNING======\n`);
         await this._tokenLogin(this.authToken, this.certificate);
         resolve();
