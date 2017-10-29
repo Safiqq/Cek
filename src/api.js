@@ -3,9 +3,6 @@ const unirest = require('unirest');
 const qrcode = require('qrcode-terminal');
 const fs = require('fs');
 const path = require('path');
-const Lyrics = require('../helpers/lirik');
-const Ig = require('../helpers/instagram');
-
 const TalkService = require('../curve-thrift/TalkService');
 
 const {
