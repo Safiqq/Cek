@@ -21,7 +21,7 @@ class LineConnect extends LineAPI {
         console.info(`[*] Name: ${displayName}\n`);
         console.info(`[*] mid: ${mid}\n`);
         console.info(`[*] Token: ${this.authToken}`);
-        console.info(`[*] Certificate: ${this.certificate}\n`);
+        console.info(`[*] Certificate: ${res.certificate}\n`);
         console.info(`=======BOT RUNNING======\n`);
         await this._tokenLogin(this.authToken, this.certificate);
         resolve();
